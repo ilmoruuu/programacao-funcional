@@ -1,0 +1,14 @@
+________________________________________________________________
+
+(Num a) => a (isso serve pra dizer que o parâmetro a faz parte de um subconjunto de Num)
+
+TIPOS DE DENTRO PRA FORA
+
+type String = [char] (O tipo String é uma lista de char)
+
+________________________________________________________________
+
+
+Funções de Alta Ordem: Recebem outras funções como argumento e podem devolver uma função
+
+map :: (a -> b) -> [a] -> [b]  (uma função transforma elementos de um tipo pra outro, ela pega um lista de um tipo e retorna a lista com seus elementos de seu outro tipo)

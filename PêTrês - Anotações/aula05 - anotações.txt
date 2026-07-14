@@ -1,0 +1,4 @@
+Toda lista [1,2,3] é igual à 1 : 2 : 3 : []
+
+Quando necessitar de maior indereçamento numa lista é interessante
+utilizar a notação (x:xs) para uma lista ao invés de "xs"

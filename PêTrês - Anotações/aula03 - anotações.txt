@@ -1,0 +1,18 @@
+LISTAS SÓ PODEM TER UM TIPO (Bool, Int, Char, String...)
+
+
+Classe = Assinatura de Funções (Interface)
+Tipo = Estrutura de Dado (Valores)
+Instância = É a conexão que permite que um tipo possa utilizar dos comportamentos de uma Classe
+
+(INSTÂNCIA CONEXÃO DE TIPOS COM AS CLASSES)
+
+[ CLASSE ] 
+    |
+    |
+    v
+[Instância]
+    |
+    |
+    v
+[Tipo]

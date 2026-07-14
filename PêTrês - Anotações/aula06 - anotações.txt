@@ -1,0 +1,6 @@
+ENCAPSULAR PARTE DE UM COMPORTAMENTO!
+
+soma x y = x + y
+soma x y = \x -> \y -> y + x
+
+Idioma = Com frequência escrever aquele código várias vezes

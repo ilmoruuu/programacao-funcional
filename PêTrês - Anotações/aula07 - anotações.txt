@@ -1,0 +1,30 @@
+
+foldr :: (a->b->b) -> b -> [a] -> b
+foldr f v [] = v
+foldr f v (x:xs) = f x (foldr f v xs)
+
+soma = foldr (+) 0
+
+soma [1,2,3] = foldr (+) 0 [1,2,3]
+ 		(+) 1 (foldr (+) 0 [2,3])
+		(+) 1 ( (+) 2 ( foldr (+) 0 [3]) )
+		(+) 1 ( (+) 2 ( (+) 3 ( foldr (+) 0 []) ) )
+		(+) 1 ( (+) 2 ( (+) 3 0 )))
+		(+) 1 ( (+) 2 3)
+		(+) 1  5 
+		6
+
+o resultado é 6.
+
+quando é foldr a expressão é avaliada da direita para esquerda
+quando é foldr valor do caso base é avaliado na direira
+
+foldr = valor da lista, função, recursão da cauda
+notação infixa =  a `funcao ` b
+
+
+- funcaoParaFoldr = foldr funcao casoBase
+
+foldr: (a-> b -> a) -> a -> [b] -> a
+foldr f v [] = v
+foldl fv (x:xs) = foldl f (f v x) xs

@@ -1,0 +1,19 @@
+subtrair :: Nat -> Nat -> Nat
+subtrair Zero _ = Zero
+subtrair x Zero = x
+subtrair (Suc x) (Suc y) = subtrair x y
+	
+-- Os parâmetros assumem esse padrão
+subtrair (Suc Suc Suc Zero) (Suc Zero)
+	   |   |________|     |    |
+	  Suc       |        Suc   y
+		    x
+
+subtrair (Suc Suc Zero) (Zero)
+-- bate no caso base
+= Suc Suc Zero (2)
+
+
+=> (isso é uma restrição de tipo)
+
+Ex:. Ord a => a -> a  (ESSE A TEM INSTÂNCIA NA CLASSE ORD)

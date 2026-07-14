@@ -1,0 +1,45 @@
+P3 - Anotações Aula01
+
+ESTADO: Característica de um objeto/componente em um determinado momento
+
+_________________________________________________________
+Exemplo de Soma de elementos de uma lista 
+
+notação de lista não vazia= (x:xs)
+x = head ("cabeça" da lista)
+xs = tail ("cauda" da lista)
+
+sum [] = 0
+sum (x : xs) = x (primeiro elemento) + sum xs (próximo elemento)
+
+sum[1 .. 5]
+1 + sum [2..5]
+e assim por diante...
+1 + 2 + 3 + 4 + 5 + sum []
+1 + 2 + 3 + 4 + 5 + 0
+= 15
+
+__________________________________________________________
+
+fst e snd = funções que atuam sobre tuplas:
+fst (1,2) = 1
+snd (1,x) = x
+
+partition = divide uma lista em duas
+__________________________________________________________
+
+Na recursão temos caso base e passo recursivo.
+
+Exercícios da aula:
+
+Questao 01
+produto [] = 1
+produto (x:xs) = x * produto xs
+
+____________________________________________________________
+
+Otherwise = true (Caso contrário)
+menor x y = if x <= y then x else y (then=então)
+NO HASKELL TODO IF TEM A NECESSIDADE DE UM ELSE
+
+

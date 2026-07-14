@@ -1,0 +1,3 @@
+Gerador = X <- [2..n] 
+
+xs = casa com lista vazia
